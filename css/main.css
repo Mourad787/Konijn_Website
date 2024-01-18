@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    background-color: rgb(255, 235, 198);
+}
+
+a {
+    color:  rgb(93, 93, 93);
+    text-decoration: none;
+}
+
+a:hover {
+    color:  rgb(141, 141, 141);
+}
+
+.body-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 250px;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    min-height: 8vh;
+    background: rgb(0, 145, 0);
+    background: radial-gradient(circle, rgba(0, 145, 0, 1) 0%, rgba(174, 255, 122, 1) 100%);
+    box-shadow: 0 5px 10px rgb(0, 0, 0, 0.5);
+    padding: 0px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+header .heading {
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px;
+}
+
+header .navbar ul {
+    list-style: none;
+}
+
+header .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+header .navbar ul li a {
+    font-size: 20px;
+    padding: 20px;
+    color: #fff;
+    display: block;
+    text-decoration: none;
+}
+
+header .navbar ul li a:hover {
+    color: black;
+    background-color: rgb(37, 192, 37);
+    border-radius: 10px;
+}
+
+header .navbar ul li ul {
+    position: absolute;
+    left: 0;
+    width: 200px;
+    background: rgb(0, 145, 0);
+    background: radial-gradient(circle, rgba(0, 145, 0, 1) 0%, rgba(174, 255, 122, 1) 100%);
+    display: none;
+}
+
+header .navbar ul li ul li {
+    width: 100%;
+    border-top: 1px solid rgba(0, 0, 0, .1);
+}
+
+header .navbar ul li ul li ul {
+    left: 200px;
+    top: 0;
+}
+
+header .navbar ul li:hover > ul {
+    display: initial;
+    animation: growDown 300ms ease-in-out forwards;
+    transform-origin: top center;
+}
+
+
+header .navbar ul li ul li {
+    left: 200px;
+    left: 0;
+}
+
+#menu-bar {
+    display: none;
+}
+
+header label {
+    font-size: 20px;
+    color: black;
+    cursor: pointer;
+    display: none;
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: static;
+    bottom: 0;
+    left: 0;
+    color: #fff;
+    width: 100%;
+    height: 100px;
+    background: rgb(0,145,0);
+    background: radial-gradient(circle, rgba(0,145,0,1) 0%, rgba(174,255,122,1) 100%);
+}
+
+/* animations */
+
+@keyframes growDown {
+    0% {
+        transform: scaleY(0);
+    }
+    80% {
+        transform: scaleY(1.1);
+    }
+    100% {
+        transform: scaleY(1);
+    }
+}
+
+
+/* Navbar responsive */
+@media(max-width:991px) {
+    header {
+        padding: 20px;
+    }
+
+    header label {
+        display: initial;
+    }
+
+    header .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: rgb(0,145,0);
+        background: radial-gradient(circle, rgba(0,145,0,1) 0%, rgba(174,255,122,1) 100%);
+        border-top: 1px solid rgba(0, 0, 0, .1);
+        display: none;
+    }
+
+    header .navbar ul li {
+        width: 100%;
+    }
+
+    header .navbar ul li ul {
+        position: relative;
+        width: 100%;
+    }
+
+    header .navbar ul li ul li {
+        background: rgb(0,145,0);
+        background: radial-gradient(circle, rgba(0,145,0,1) 0%, rgba(174,255,122,1) 100%);
+    }
+
+    header .navbar ul li ul li ul {
+        width: 100%;
+        left: 0;
+    }
+
+    #menu-bar:checked ~ .navbar {
+        display: initial;
+    }
+}
+/* footer responsive */
+@media screen and (max-width: 600px) {
+    footer {
+        text-align: center;
+    }
+}

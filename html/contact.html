@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konijnen</title>
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link rel="stylesheet" type="text/css" href="../css/classes.css">
+</head>
+<body>
+    <header>
+
+        <div class="heading">
+            <h4>Konijnen</h4>
+        </div>
+
+        <input type="checkbox" id="menu-bar">
+        <label for="menu-bar">Menu</label>
+
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="#">Soorten ↴</a>
+                    <ul>
+                        <li><a href="wild_konijn.html">Wild konijn</a></li>
+                        <li><a href="#">Tam konijn ➡ </a>
+                            <ul>
+                                <li><a href="tam_konijn.html">-Info</a></li>
+                                <li><a href="rassen.html">- Rassen</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="leefgebied.html">Leefgebied</a></li>
+                <li><a href="leefwijze.html">Leefwijze</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="title">
+        <h1>Stuur hier een foto van jouw konijn in!</h1>
+        <p>Laat in dit formulier jouw naam, email en een foto van jou konijn achter. <br />
+            Deze kunnen wij gaan gebruiken voor een mooie gallerij.
+        </p>
+    </div>
+    <section class="contact">
+        <div class="container-contact">
+            <div class="contact-box">
+                <div class="box-left">
+                    <form class="form">
+                        <span class="form-title"><h2>Stuur hier jouw foto in</h2></span>
+                        <div class="input-box">
+                            <input type="text" name="naam" class="input-name" placeholder="Naam" />
+                        </div>
+                        <div class="input-box">
+                            <input type="text" name="email" class="input-email" placeholder="Email" />
+                        </div>
+                        <div class="input-box">
+                            <input type="file" name="foto" class="input-file" />
+                        </div>
+                        <div class="submit-box">
+                            <input type="submit" name="submit" class="submit" value="Versturen" />
+                        </div>
+                    </form>
+                </div>
+                <div class="box-right">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <footer>
+        <span>&#169; 2022 Mourad, Informatica Reponsive websites</span>
+    </footer> -->
+</body>
+</html>

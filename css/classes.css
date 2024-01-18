@@ -1,0 +1,779 @@
+/* universal classes */
+/* oftewel klassen die op meerde pagina's hetzelfde zijn */ 
+.title {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    
+}
+
+.title h1 {
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+
+/* Home */
+.hero {
+    height: 40vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../img/twee_konijntjes.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    position: relative;
+ }
+
+.hero-content {
+    text-align: center;
+    color: #fff;
+}
+
+.hero-content h1 {
+    font-size: 70px;
+}
+
+.cards {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+
+.card {
+    width: 25%;
+    margin: 10px;
+    border-radius: 5px;
+    color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);  
+    background: rgb(0,145,0);
+    background: linear-gradient(0deg, rgba(0,145,0,1) 0%, rgba(174,255,122,1) 100%);
+    animation: moveCards 700ms;
+}
+ 
+.card-container {
+    padding: 10px 16px;
+}
+
+.card-img {
+    width: 100%;
+    border-radius: 5px;
+    margin: 10px 0 20px 0;
+    
+}
+
+.link-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.link {
+    color:#fff;
+    margin-top: 15px;
+    font-family: 'Rubik';
+    font-family: 'Rubik';
+    transition: 0.3s;
+    cursor: pointer; 
+    text-align: center;
+
+}
+
+.link:hover {
+    transform: scale(1.2);  
+    color: rgb(201,201,201);
+}
+
+
+/* wild konijn */
+
+.content-wild h1 {
+    font-size: 40px;
+    letter-spacing: 3px;
+    line-height: 3.0em;
+}
+
+.content-wild, .content-wild-2 {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+.content-wild-2 {
+    background: rgb(255, 226, 168);
+}
+
+
+
+.text-left, .text-right {
+    width: 66.66666%;
+    align-self: flex-start;
+    margin: 30px;
+    line-height: 1.9em;
+    padding: 20px;
+    font-size: 1.3rem;
+
+}
+
+.text-right {
+    align-self: flex-end;
+}
+
+.image-left, .image-right {
+    width: 33.33333%;
+    align-self: flex-start;
+    margin: 20px;
+    padding: 20px;
+}
+
+.image-right {
+    align-self: flex-end;
+}
+
+
+
+.image-wild {
+    max-width: 100%;
+    border-radius: 5%;
+}
+
+/* Tam konijn */
+
+.content-row-tam {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+.left-column {
+    width: 25%;
+    margin: 10px;
+    padding: 10px;
+    background-color: rgb(255, 241, 215);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+}
+
+.middle-column {
+    width: 75%;
+    margin: 10px;
+    padding: 10px;
+    background-color: rgb(255, 241, 215);
+}
+
+.right-column {
+    width: 25%;
+    margin: 10px;
+    padding: 10px;
+    background-color: rgb(255, 241, 215);
+}
+
+.rassen-list {
+    list-style-type: none;
+    padding: 20px;
+    line-height: 1.3em;
+}
+.card-tam {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: rgb(255, 235, 198);
+    padding: 10px;
+    font-size: 1.2rem;
+}
+
+
+.image-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.small-image {
+    width: 50%;
+    overflow: hidden;
+    margin: 10px;
+}
+
+.small-image img {
+    width: 100%;
+    border-radius: 5%;
+}
+
+
+.image {
+    width: 50%;
+    margin-bottom: 5px;
+    border-radius: 5%;
+    margin-top: 10px;
+}
+
+/* rassengallery */
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.gallery > * {
+    margin: 5px;
+}
+
+.gallery-item {
+    width: 400px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5%;
+    margin-bottom: 5px;
+}
+
+.gallery-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5%;
+}
+
+.layer {
+    opacity: 0;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10px;
+    height: 90%;
+    background: #fff;
+    color: #151e3f;
+    border-radius: 5%;
+}
+
+.layer p {
+    transform: scale(0.1);
+}
+
+.gallery-item:hover .layer {
+    opacity: 0.8;
+    width: 90%;
+    transition: ease-in 400ms;
+}
+
+.gallery-item:hover .layer p {
+    transform: scale(1);
+}
+
+.image-desc {
+    display: none;
+}
+
+/* Leefwijze */
+
+.hero-with-text {
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../img/konijn-header2.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    position: relative;
+ }
+
+.hero-with-text-content {
+    color: #fff;
+    text-align: center;
+    font-size: 1.3rem;
+    line-height: 1.9em;
+}
+
+ .card-leefwijze {
+    width: 33%;
+    margin: 10px;
+    border-radius: 5px;
+    color: #fff; 
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);  
+    background: rgb(0,145,0);
+    background: linear-gradient(0deg, rgba(0,145,0,1) 0%, rgba(174,255,122,1) 100%);
+}
+.content-leefwijze, .content-leefwijze-mirror {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+.content-leefwijze-mirror {
+    background: rgb(255, 226, 168);
+}
+
+.image-right-leefwijze {
+    width: 33.33333%;
+    align-self: flex-end;
+    margin: 60px;
+    padding: 20px;
+}
+
+  /* leefgebied*/
+  /* De hele timeline */
+  .timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Streep op de timeline */
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: rgb(10, 155, 22);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+  
+  }
+  
+  /* Container om de content */
+  .container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+  }
+  
+  /* De cirkels in de timeline */
+  .container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: white;
+    border: 4px solid #06bd77;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  /* linkerkant cards van de container */
+  .left {
+    left: 0;
+  }
+  
+  /* rechterkant cards van de container */
+  .right {
+    left: 50%;
+  }
+  
+  /* voegt te pijltjes toe aan de linker kant van de container(links naar rechts) */
+  .left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+  }
+  
+  /* voegt te pijltjes toe aan de rechter kant van de container(richt naar links) */
+  .right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+  
+  /* Fix de circle voor containers aan de rechterkant */
+  .right::after {
+    left: -16px;
+  }
+  
+  /* De witte content balken*/
+  .content {
+    padding: 20px 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+  }
+
+
+/* contactpage */
+
+.contact {
+    width: 100%;
+}
+.container-contact {
+    width: 60%;
+    margin: 50px auto;
+}
+
+.contact-box {
+    display: flex;
+    background-color: #fff;
+}
+
+.box-left {
+    flex-basis: 60%;
+    padding: 20px 40px;
+}
+
+.box-right {
+    flex-basis: 40%;
+    padding: 20px 40px;
+    background: url(../img/snoetje_2.jpg);
+    background-position: center center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    left: 0;
+    right: 0;
+
+}
+
+.form-title {
+    letter-spacing: 2px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.input-box {
+    width: 70%;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.submit-box {
+    width: 50%;
+}
+
+.form input[type="text"], .form input[type="file"] {
+    background-color: #ebebeb;
+    border: none;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    transition: transform 400ms;
+}
+
+.form input[type="text"]:hover {
+    transform: scale(1.2);
+}
+
+
+.submit {
+    display: block;
+    width: 100%;
+    background: rgb(0,145,0);
+    color: white;
+    font-size: 20px;
+    margin: 30px auto;
+    border: none;
+    padding: 10px;
+    border-radius: 2px;
+    transition: all 0.5s ease 0s;
+}
+
+.submit:hover {
+    transform: scale(1.1);
+    box-shadow: 15px 15px 15px 5px rgba(78,72,77,0.219);
+    cursor: pointer;
+}
+  
+
+/*Keyframes*/
+@keyframes moveCards {
+    from {width: 0%;}
+    to {width: 25%;}
+}
+@keyframes moveCardsResponsiveMobile {
+    from {width: 0%;}
+    to {width: 100%;}
+}
+
+/* mediaqueries */
+
+/* home responsive */
+@media screen and (max-width: 600px) {
+    .cards {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .card, .card-leefwijze {
+        width: 100%;
+        /* margin: 10px; */
+        animation: moveCardsResponsiveMobile 0.3s;
+    }
+}
+
+
+@media  screen and (min-width: 601px) and (max-width: 991px) {
+    .cards {
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .card {
+        width: 45%;
+        animation: none;
+    }
+
+}
+
+
+
+/* wild konijn responsive en de zigzag secties van leefwijze responsive*/
+
+@media screen and (max-width: 991px) {
+    .content-wild, .content-wild-2, .content-leefwijze, .content-leefwijze-mirror {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    .text-left {
+        width: 100%;
+        align-self: center;
+        text-align: center;
+    }
+
+    .text-right {
+        width: 100%;
+        align-self: center;
+        text-align: center;
+    }
+    
+    .image-right, .image-right-leefwijze {
+        width: 100%;
+        align-self: center;
+    }
+    
+    .image-left {
+        width: 100%;
+        align-self: center;
+    }
+}
+/* responsive wild konijn en leefwijze op tablet */
+@media screen and (min-width: 992px) and (max-width: 1150px) {
+    .text-left {
+        width: 50%;
+        align-self: center;
+        text-align: center;
+    }
+
+    .text-right {
+        width: 50%;
+        align-self: center;
+        text-align: center;
+    }
+    
+    .image-right, .image-right-leefwijze {
+        width: 50%;
+        align-self: center;
+    }
+    .image-left {
+        width: 50%;
+        align-self: center;
+    }
+}
+
+
+/* responsive tam konijn */
+
+@media screen and (max-width: 991px){
+    .content-row-tam {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+    }
+
+    .left-column {
+        flex-direction: column;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .middle-column {
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .right-column {
+        width: 100%;
+    }
+
+    .card-tam {
+        width: 100%;
+        text-align: left;
+    }
+
+}
+
+@media screen and (min-width: 991px) and (max-width: 1730px) {
+    .content-row-tam {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    
+    .left-column {
+        width: 45%;
+    }
+
+    .middle-column {
+        width: 45%;
+    }
+
+    .right-column {
+        width: 100%;
+    }
+
+}
+/* Gallerij responsive */
+@media screen and (max-width: 600px) {
+    .image-desc {
+        display: block;
+        position: relative;
+    }
+    .gallery {
+        display: flex;
+        flex-direction: column;
+    }
+    .layer {
+        display: none;
+    }
+}
+/* leefgebied responsive */
+  /* Media queries - Responsive timeline on screens less than 600px wide */
+  @media screen and (max-width: 600px) {
+  
+    /* Houd de timeline streep aan de linkerkant */
+    .timeline::after {
+      left: 31px;
+    }
+  
+    /* Full width containers */
+    .container {
+      width: 100%;
+      padding-left: 70px;
+      padding-right: 25px;
+    }
+  
+    /* Houd al de pijltjes naar links */
+    .container::before {
+      left: 60px;
+      border: medium solid white;
+      border-width: 10px 10px 10px 0;
+      border-color: transparent white transparent transparent;
+    }
+  
+    /* Houd alle cirkels op de zelfde plek */
+    .left::after,
+    .right::after {
+      left: 15px;
+    }
+  
+    /*  Houd alles aan de linkerkant */
+    .right {
+      left: 0%;
+    }
+  }
+/* leefwijze responsive*/
+@media screen and (max-width: 600px) {
+    .hero-with-text-content {
+        line-height: 1.3em;
+    }
+}
+
+/* formulier responsive */
+@media screen and (max-width: 991px) {
+    .container-contact {
+        width: 90%;
+    }
+    
+    .contact-box {
+        display: flex;
+        justify-content: center;
+        background-color: #fff;
+    }
+    
+    .box-left {
+        flex-basis: 80%;
+
+    }
+    .box-right {
+        display: none;
+    }
+    .form {
+        max-width: 100%;
+    }
+    .input-box {
+        width: 90%;
+    }
+    
+    .submit-box {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .submit-box {
+        width: 90%;
+    }
+}
